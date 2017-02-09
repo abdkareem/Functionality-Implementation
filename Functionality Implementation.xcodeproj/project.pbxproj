@@ -15,6 +15,11 @@
 		518D526C1E45BA5C003F4CB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518D526A1E45BA5C003F4CB6 /* LaunchScreen.storyboard */; };
 		518D52771E45BA5C003F4CB6 /* Functionality_ImplementationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 518D52761E45BA5C003F4CB6 /* Functionality_ImplementationTests.m */; };
 		518D52821E45BA5C003F4CB6 /* Functionality_ImplementationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 518D52811E45BA5C003F4CB6 /* Functionality_ImplementationUITests.m */; };
+		518D52911E45C8D7003F4CB6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518D52901E45C8D7003F4CB6 /* SystemConfiguration.framework */; };
+		518D52941E45CCDC003F4CB6 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 518D52931E45CCDC003F4CB6 /* Reachability.m */; };
+		518D529D1E46C6EF003F4CB6 /* NoInternetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 518D529C1E46C6EF003F4CB6 /* NoInternetViewController.m */; };
+		518D52A21E46F316003F4CB6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518D52A11E46F316003F4CB6 /* CoreLocation.framework */; };
+		518D52A51E46FFFE003F4CB6 /* UserLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 518D52A41E46FFFE003F4CB6 /* UserLocationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,14 @@
 		518D527D1E45BA5C003F4CB6 /* Functionality ImplementationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Functionality ImplementationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		518D52811E45BA5C003F4CB6 /* Functionality_ImplementationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Functionality_ImplementationUITests.m; sourceTree = "<group>"; };
 		518D52831E45BA5C003F4CB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		518D52901E45C8D7003F4CB6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		518D52921E45CCDC003F4CB6 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		518D52931E45CCDC003F4CB6 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		518D529B1E46C6EF003F4CB6 /* NoInternetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoInternetViewController.h; path = ../NoInternetViewController.h; sourceTree = "<group>"; };
+		518D529C1E46C6EF003F4CB6 /* NoInternetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoInternetViewController.m; path = ../NoInternetViewController.m; sourceTree = "<group>"; };
+		518D52A11E46F316003F4CB6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		518D52A31E46FFFE003F4CB6 /* UserLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLocationViewController.h; sourceTree = "<group>"; };
+		518D52A41E46FFFE003F4CB6 /* UserLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLocationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				518D52A21E46F316003F4CB6 /* CoreLocation.framework in Frameworks */,
+				518D52911E45C8D7003F4CB6 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,7 @@
 				518D52751E45BA5C003F4CB6 /* Functionality ImplementationTests */,
 				518D52801E45BA5C003F4CB6 /* Functionality ImplementationUITests */,
 				518D525A1E45BA5C003F4CB6 /* Products */,
+				518D528F1E45C8D7003F4CB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,8 +119,14 @@
 			children = (
 				518D525F1E45BA5C003F4CB6 /* AppDelegate.h */,
 				518D52601E45BA5C003F4CB6 /* AppDelegate.m */,
+				518D52921E45CCDC003F4CB6 /* Reachability.h */,
+				518D52931E45CCDC003F4CB6 /* Reachability.m */,
+				518D529B1E46C6EF003F4CB6 /* NoInternetViewController.h */,
+				518D529C1E46C6EF003F4CB6 /* NoInternetViewController.m */,
 				518D52621E45BA5C003F4CB6 /* ViewController.h */,
 				518D52631E45BA5C003F4CB6 /* ViewController.m */,
+				518D52A31E46FFFE003F4CB6 /* UserLocationViewController.h */,
+				518D52A41E46FFFE003F4CB6 /* UserLocationViewController.m */,
 				518D52651E45BA5C003F4CB6 /* Main.storyboard */,
 				518D52681E45BA5C003F4CB6 /* Assets.xcassets */,
 				518D526A1E45BA5C003F4CB6 /* LaunchScreen.storyboard */,
@@ -138,6 +160,15 @@
 				518D52831E45BA5C003F4CB6 /* Info.plist */,
 			);
 			path = "Functionality ImplementationUITests";
+			sourceTree = "<group>";
+		};
+		518D528F1E45C8D7003F4CB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				518D52A11E46F316003F4CB6 /* CoreLocation.framework */,
+				518D52901E45C8D7003F4CB6 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +309,9 @@
 			files = (
 				518D52641E45BA5C003F4CB6 /* ViewController.m in Sources */,
 				518D52611E45BA5C003F4CB6 /* AppDelegate.m in Sources */,
+				518D529D1E46C6EF003F4CB6 /* NoInternetViewController.m in Sources */,
+				518D52A51E46FFFE003F4CB6 /* UserLocationViewController.m in Sources */,
+				518D52941E45CCDC003F4CB6 /* Reachability.m in Sources */,
 				518D525E1E45BA5C003F4CB6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
